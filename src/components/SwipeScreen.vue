@@ -166,7 +166,7 @@ const onMouseUp = () => {
 
 .controls {
   position: absolute;
-  bottom: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   display: flex;
   gap: 20px;
   z-index: 5;
